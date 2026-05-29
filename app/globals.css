@@ -24,3 +24,21 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes spotlight {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%) scaleX(0.5);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100%) scaleX(0.5);
+  }
+}
+
+.animate-spotlight {
+  animation: spotlight 3s ease-in-out infinite;
+}
