@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function CTA() {
   return (
@@ -24,12 +25,16 @@ export default function CTA() {
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">
-            <button className="bg-gradient-to-r from-cyan-500 to-purple-600 text-white px-10 py-4 rounded-xl font-semibold hover:scale-105 transition-transform text-lg">
-              Start Your Project
-            </button>
-            <button className="border border-white/20 text-white px-10 py-4 rounded-xl font-semibold hover:bg-white/5 transition-colors text-lg">
-              Schedule a Call
-            </button>
+            <Link href="/contact" className="cursor-pointer">
+              <button className="bg-gradient-to-r from-cyan-500 to-purple-600 text-white px-10 py-4 rounded-xl font-semibold hover:scale-105 transition-transform text-lg cursor-pointer">
+                Start Your Project
+              </button>
+            </Link>
+            <Link href="/contact" className="cursor-pointer">
+              <button className="border border-white/20 text-white px-10 py-4 rounded-xl font-semibold hover:bg-white/5 transition-colors text-lg cursor-pointer">
+                Schedule a Call
+              </button>
+            </Link>
           </div>
         </motion.div>
       </div>

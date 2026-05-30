@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card";
 import { Spotlight } from "@/components/ui/spotlight";
 import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
 export default function SplineDemo() {
   const stats = [
     { number: "500+", label: "Projects Delivered" },
@@ -51,13 +52,17 @@ export default function SplineDemo() {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <button className="bg-gradient-to-r from-cyan-500 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold hover:scale-105 transition-transform flex items-center gap-2">
-                Start Your Project
-                <FaArrowRight className="text-sm" />
-              </button>
-              <button className="border border-white/20 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/5 transition-colors">
+              <Link href="/contact" className="cursor-pointer">
+                <button className="bg-gradient-to-r from-cyan-500 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold hover:scale-105 transition-transform flex items-center gap-2 cursor-pointer">
+                  Start Your Project
+                  <FaArrowRight className="text-sm" />
+                </button>
+              </Link>
+              <Link href="/portfolio" className="cursor-pointer">
+              <button className="border border-white/20 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/5 transition-colors cursor-pointer">
                 View Our Work
-              </button>
+              </button></Link>
+              
               
             </div>
 

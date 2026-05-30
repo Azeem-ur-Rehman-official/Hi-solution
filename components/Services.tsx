@@ -2,7 +2,7 @@
 
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
-import { FaReact, FaCloud, FaDatabase, FaCode, FaRobot, FaRocket, FaCheck } from "react-icons/fa";
+import { FaReact, FaCloud, FaChartLine, FaCode, FaRobot, FaPalette, FaCheck } from "react-icons/fa";
 
 const services = [
   {
@@ -30,16 +30,16 @@ const services = [
     features: ["AI Agents", "Machine Learning", "Natural Language Processing", "Smart Automation"]
   },
   {
-    icon: FaDatabase,
-    title: "Data Analytics",
-    description: "Transform your data into actionable insights with advanced analytics and machine learning solutions.",
-    features: ["Business Intelligence", "ML Models", "Data Visualization", "Predictive Analytics"]
+    icon: FaChartLine,
+    title: "SEO & Digital Marketing",
+    description: "Boost your online visibility, drive organic traffic, and grow your brand with expert search engine optimization and digital marketing strategies.",
+    features: ["Search Engine Optimization (SEO)", "Search Engine Marketing (SEM)", "Social Media Marketing", "Content Strategy & Copywriting"]
   },
   {
-    icon: FaRocket,
-    title: "Digital Transformation",
-    description: "End-to-end digital transformation services to modernize your business and stay ahead of the competition.",
-    features: ["Strategy Consulting", "Process Automation", "Legacy Modernization", "Innovation Labs"]
+    icon: FaPalette,
+    title: "Designing & Customization",
+    description: "Tailor-made design and customization services for web and mobile apps to perfectly match your brand identity and unique functional needs.",
+    features: ["UI/UX Design & Prototyping", "Theme Customization", "Feature Tailoring", "Brand Alignment & Assets"]
   }
 ];
 

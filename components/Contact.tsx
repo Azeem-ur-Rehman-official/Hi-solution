@@ -5,16 +5,16 @@ import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaFacebook, FaTwitter, FaInstagram
 
 const locations = [
   {
-    city: "San Francisco",
+    city: "Lake City (lahore)",
     address: "123 Tech Street, Suite 400",
-    zip: "San Francisco, CA 94105",
-    phone: "+1 (555) 123-4567"
+    zip: "CA 94105",
+    phone: "+92 310 1627996"
   },
   {
-    city: "New York",
+    city: "Depalpur District (Okara)",
     address: "456 Innovation Ave, Floor 20",
-    zip: "New York, NY 10001",
-    phone: "+1 (555) 987-6543"
+    zip: "NY 10001",
+    phone: "+92 310 1627996"
   }
 ];
 
@@ -110,7 +110,8 @@ export default function Contact() {
                   <option value="mobile" className="text-black">Mobile Apps</option>
                   <option value="cloud" className="text-black">Cloud Solutions</option>
                   <option value="ai" className="text-black">AI Agents & Solutions</option>
-                  <option value="data" className="text-black">Data Analytics</option>
+                  <option value="seo" className="text-black">SEO & Digital Marketing</option>
+                  <option value="design" className="text-black">Designing & Customization</option>
                   <option value="other" className="text-black">Other</option>
                 </select>
               </div>
@@ -152,7 +153,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-gray-400 text-sm">Email</p>
-                    <p className="text-white">hello@hisolu.com</p>
+                    <p className="text-white">hisolu1@outlook.com</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -161,7 +162,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-gray-400 text-sm">Phone</p>
-                    <p className="text-white">+1 (555) 123-4567</p>
+                    <p className="text-white">+92 310 1627996</p>
                   </div>
                 </div>
               </div>

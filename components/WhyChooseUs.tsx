@@ -7,7 +7,7 @@ import { FaClock, FaBrain, FaHeadset, FaRocket } from "react-icons/fa";
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-32 relative overflow-hidden">
+    <section id="about" className="py-32 relative overflow-hidden">
       <Spotlight className="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" fill="#8b5cf6" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
