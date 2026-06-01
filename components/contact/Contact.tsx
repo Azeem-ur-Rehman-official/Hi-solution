@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub, FaPaperPlane } from "react-icons/fa";
-
+import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import ContactForm from "./ContactForm";
 const locations = [
   {
     city: "Lake City (lahore)",
@@ -27,10 +27,7 @@ const socialLinks = [
 ];
 
 export default function Contact() {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    alert("Thank you for your message! We'll get back to you soon.");
-  };
+  
 
   return (
     <section id="contact" className="py-32 relative">
@@ -61,79 +58,7 @@ export default function Contact() {
             viewport={{ once: true }}
             className="bg-white/5 border border-white/10 rounded-3xl p-8"
           >
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-gray-400 text-sm mb-2">First Name</label>
-                  <input
-                    type="text"
-                    required
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors"
-                    placeholder="John"
-                  />
-                </div>
-                <div>
-                  <label className="block text-gray-400 text-sm mb-2">Last Name</label>
-                  <input
-                    type="text"
-                    required
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors"
-                    placeholder="Doe"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-gray-400 text-sm mb-2">Email</label>
-                <input
-                  type="email"
-                  required
-                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors"
-                  placeholder="john@example.com"
-                />
-              </div>
-
-              <div>
-                <label className="block text-gray-400 text-sm mb-2">Phone</label>
-                <input
-                  type="tel"
-                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors"
-                  placeholder="+1 (555) 000-0000"
-                />
-              </div>
-
-              <div>
-                <label className="block text-gray-400 text-sm mb-2">Service Interest</label>
-                <select className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors">
-                  <option value="" className="text-black">Select a service</option>
-                  <option value="web" className="text-black">Web Development</option>
-                  <option value="mobile" className="text-black">Mobile Apps</option>
-                  <option value="cloud" className="text-black">Cloud Solutions</option>
-                  <option value="ai" className="text-black">AI Agents & Solutions</option>
-                  <option value="seo" className="text-black">SEO & Digital Marketing</option>
-                  <option value="design" className="text-black">Designing & Customization</option>
-                  <option value="other" className="text-black">Other</option>
-                </select>
-              </div>
-
-              <div>
-                <label className="block text-gray-400 text-sm mb-2">Message</label>
-                <textarea
-                  required
-                  rows={5}
-                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors resize-none"
-                  placeholder="Tell us about your project..."
-                ></textarea>
-              </div>
-
-              <button
-                type="submit"
-                className="w-full bg-gradient-to-r from-cyan-500 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold hover:scale-[1.02] transition-transform flex items-center justify-center gap-2"
-              >
-                Send Message
-                <FaPaperPlane className="text-sm" />
-              </button>
-            </form>
+            <ContactForm/>
           </motion.div>
 
           {/* Contact Info */}
