@@ -22,10 +22,11 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-6 py-4 relative">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2 cursor-pointer">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-purple-600 flex items-center justify-center">
-                <span className="text-white font-bold text-xl">H</span>
-              </div>
-              <span className="text-white font-semibold text-xl">Hisolu</span>
+              <img
+                src="/hisol.png"
+                alt="Hisolu"
+                className="h-9 w-auto object-contain"
+              />
             </Link>
 
             {/* Desktop Menu */}
@@ -102,12 +103,11 @@ export default function Navbar() {
                   onClick={() => setIsOpen(false)}
                   className="flex items-center gap-2 cursor-pointer"
                 >
-                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-purple-600 flex items-center justify-center">
-                    <span className="text-white font-bold text-xl">H</span>
-                  </div>
-                  <span className="text-white font-semibold text-xl">
-                    Hisolu
-                  </span>
+                  <img
+                    src="/hisol.png"
+                    alt="Hisolu"
+                    className="h-9 w-auto object-contain"
+                  />
                 </Link>
                 <button
                   onClick={() => setIsOpen(false)}

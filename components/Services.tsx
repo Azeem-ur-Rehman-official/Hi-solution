@@ -32,13 +32,13 @@ const services = [
   {
     icon: FaChartLine,
     title: "SEO & Digital Marketing",
-    description: "Boost your online visibility, drive organic traffic, and grow your brand with expert search engine optimization and digital marketing strategies.",
+    description: "Boost your online visibility, drive organic traffic, and scale your brand with expert SEO and data-driven.",
     features: ["Search Engine Optimization (SEO)", "Search Engine Marketing (SEM)", "Social Media Marketing", "Content Strategy & Copywriting"]
   },
   {
     icon: FaPalette,
     title: "Designing & Customization",
-    description: "Tailor-made design and customization services for web and mobile apps to perfectly match your brand identity and unique functional needs.",
+    description: "Tailor-made UI/UX and customization services that perfectly align with your brand identity and user experience goals.",
     features: ["UI/UX Design & Prototyping", "Theme Customization", "Feature Tailoring", "Brand Alignment & Assets"]
   }
 ];

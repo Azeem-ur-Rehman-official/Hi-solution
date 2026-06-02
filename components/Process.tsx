@@ -3,8 +3,8 @@
 import { motion } from "framer-motion";
 
 const process = [
-  { step: "01", title: "Discovery", description: "We analyze your requirements and business goals to create a comprehensive roadmap." },
-  { step: "02", title: "Design", description: "Our designers craft intuitive interfaces with seamless user experiences." },
+  { step: "01", title: "Discovery", description: "We analyze your market, audience, and business goals to map out a clear strategy for success." },
+  { step: "02", title: "Design", description: "We launch your platform with rigorous quality checks and optimize it for growth and ongoing support." },
   { step: "03", title: "Development", description: "Expert developers build your solution using cutting-edge technologies." },
   { step: "04", title: "Deployment", description: "We deploy your product with rigorous testing and ongoing support." }
 ];
@@ -33,9 +33,10 @@ export default function Process() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
-              className="relative"
+              className="relative 
+            p-3"
             >
-              <div className="text-6xl font-bold text-white/5 mb-4">{item.step}</div>
+              <div className="text-6xl font-bold text-white/30 mb-4">{item.step}</div>
               <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
               <p className="text-gray-400">{item.description}</p>
               {index < process.length - 1 && (

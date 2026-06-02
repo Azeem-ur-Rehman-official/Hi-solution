@@ -38,9 +38,9 @@ export default function SplineDemo() {
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-6">
-              Building the
+              Powering Next-Gen 
               <span className="block bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                Future of Digital
+                Brands with AI-Driven
               </span>
               Solutions
             </h1>

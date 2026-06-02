@@ -7,10 +7,11 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-purple-600 flex items-center justify-center">
-                <span className="text-white font-bold text-xl">H</span>
-              </div>
-              <span className="text-white font-semibold text-xl">Hisolu</span>
+              <img
+                src="/hisol.png"
+                alt="Hisolu"
+                className="h-9 w-auto object-contain"
+              />
             </div>
             <p className="text-gray-400 text-sm">
               Building the future of digital solutions. Your vision, our expertise.
@@ -49,11 +50,11 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm">
-            © 2026 Hisolu. All rights reserved.
+            © 2018 Hisolu. All rights reserved.
           </p>
           <div className="flex gap-6">
             <Link href="/privacy-policy" className="text-gray-500 hover:text-cyan-400 transition-colors text-sm">Privacy Policy</Link>
-            
+            <a href="#" className="text-gray-500 hover:text-cyan-400 transition-colors text-sm">Terms of Service</a>
           </div>
         </div>
       </div>
