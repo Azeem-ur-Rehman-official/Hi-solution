@@ -15,7 +15,9 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
+      <nav
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isLoaded ? "opacity-100" : "opacity-0"}`}
+      >
         <div className="absolute inset-0 bg-black/80 backdrop-blur-xl border-b border-white/10"></div>
         <div className="max-w-7xl mx-auto px-6 py-4 relative">
           <div className="flex items-center justify-between">
@@ -28,14 +30,29 @@ export default function Navbar() {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center gap-8">
-              {["Services", "Portfolio", "Process", "About", "Contact"].map((item) => {
-                const href = item === "Contact" ? "/contact" : item === "Portfolio" ? "/portfolio" : `/#${item.toLowerCase()}`;
-                return (
-                  <Link key={item} href={href} className="text-gray-300 hover:text-white transition-colors text-sm font-medium cursor-pointer">
-                    {item}
-                  </Link>
-                );
-              })}
+              {["Home","Services", "Portfolio", "Process", "About", "Contact"].map(
+                (item) => {
+                  const href =
+                    item === "Home"
+                      ? "/"
+                      : item === "Contact"
+                        ? "/contact"
+                        : item === "Portfolio"
+                          ? "/portfolio"
+                          : item === "About"
+                            ? "/about"
+                            : `/#${item.toLowerCase()}`;
+                  return (
+                    <Link
+                      key={item}
+                      href={href}
+                      className="text-gray-300 hover:text-white transition-colors text-sm font-medium cursor-pointer"
+                    >
+                      {item}
+                    </Link>
+                  );
+                },
+              )}
             </div>
 
             {/* Desktop CTA Button */}
@@ -46,7 +63,7 @@ export default function Navbar() {
             </Link>
 
             {/* Mobile Menu Toggle Button */}
-            <button 
+            <button
               onClick={() => setIsOpen(true)}
               className="md:hidden text-gray-300 hover:text-white focus:outline-none cursor-pointer"
               aria-label="Open Menu"
@@ -80,11 +97,17 @@ export default function Navbar() {
             >
               {/* Sidebar Header */}
               <div className="flex items-center justify-between mb-12">
-                <Link href="/" onClick={() => setIsOpen(false)} className="flex items-center gap-2 cursor-pointer">
+                <Link
+                  href="/"
+                  onClick={() => setIsOpen(false)}
+                  className="flex items-center gap-2 cursor-pointer"
+                >
                   <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-purple-600 flex items-center justify-center">
                     <span className="text-white font-bold text-xl">H</span>
                   </div>
-                  <span className="text-white font-semibold text-xl">Hisolu</span>
+                  <span className="text-white font-semibold text-xl">
+                    Hisolu
+                  </span>
                 </Link>
                 <button
                   onClick={() => setIsOpen(false)}
@@ -97,24 +120,45 @@ export default function Navbar() {
 
               {/* Sidebar Links */}
               <div className="flex flex-col gap-6 flex-1">
-                {["Services", "Portfolio", "Process", "About", "Contact"].map((item) => {
-                  const href = item === "Contact" ? "/contact" : item === "Portfolio" ? "/portfolio" : `/#${item.toLowerCase()}`;
-                  return (
-                    <Link
-                      key={item}
-                      href={href}
-                      onClick={() => setIsOpen(false)}
-                      className="text-gray-300 hover:text-white transition-colors text-xl font-medium cursor-pointer py-2 border-b border-white/5"
-                    >
-                      {item}
-                    </Link>
-                  );
-                })}
+                <Link
+                  key="Home"
+                  href="/"
+                  onClick={() => setIsOpen(false)}
+                  className="text-gray-300 hover:text-white transition-colors text-xl font-medium cursor-pointer py-2 border-b border-white/5"
+                >
+                  Home
+                </Link>
+                {["Services", "Portfolio", "Process", "About", "Contact"].map(
+                  (item) => {
+                    const href =
+                      item === "Contact"
+                        ? "/contact"
+                        : item === "About"
+                          ? "/about"
+                          : item === "Portfolio"
+                            ? "/portfolio"
+                            : `/#${item.toLowerCase()}`;
+                    return (
+                      <Link
+                        key={item}
+                        href={href}
+                        onClick={() => setIsOpen(false)}
+                        className="text-gray-300 hover:text-white transition-colors text-xl font-medium cursor-pointer py-2 border-b border-white/5"
+                      >
+                        {item}
+                      </Link>
+                    );
+                  },
+                )}
               </div>
 
               {/* Sidebar Footer CTA */}
               <div className="mt-auto pt-6">
-                <Link href="/contact" onClick={() => setIsOpen(false)} className="w-full cursor-pointer">
+                <Link
+                  href="/contact"
+                  onClick={() => setIsOpen(false)}
+                  className="w-full cursor-pointer"
+                >
                   <button className="w-full bg-gradient-to-r from-cyan-500 to-purple-600 text-white py-3 rounded-xl font-medium hover:opacity-90 transition-opacity cursor-pointer">
                     Get Started
                   </button>

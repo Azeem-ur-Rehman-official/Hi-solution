@@ -30,7 +30,7 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Company</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
-              <li><Link href="/#about" className="hover:text-cyan-400 transition-colors">About Us</Link></li>
+              <li><Link href="/about" className="hover:text-cyan-400 transition-colors">About Us</Link></li>
               <li><a href="#" className="hover:text-cyan-400 transition-colors">Careers</a></li>
               <li><a href="#" className="hover:text-cyan-400 transition-colors">Blog</a></li>
               <li><Link href="/contact" className="hover:text-cyan-400 transition-colors">Contact</Link></li>
@@ -42,7 +42,7 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>Hisolu1@outlook.com</li>
               <li>+92 310 1627996</li>
-              <li>San Francisco, CA</li>
+              
             </ul>
           </div>
         </div>
@@ -53,7 +53,7 @@ export default function Footer() {
           </p>
           <div className="flex gap-6">
             <Link href="/privacy-policy" className="text-gray-500 hover:text-cyan-400 transition-colors text-sm">Privacy Policy</Link>
-            <a href="#" className="text-gray-500 hover:text-cyan-400 transition-colors text-sm">Terms of Service</a>
+            
           </div>
         </div>
       </div>
