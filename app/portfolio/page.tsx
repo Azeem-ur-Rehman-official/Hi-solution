@@ -10,13 +10,13 @@ const categories = ["All", "Web", "Mobile", "Cloud", "AI", "Security"];
 
 const projects = [
   {
-    title: "Aether Finance",
+    title: "Avicena International Medical University",
     category: "Web",
     icon: FaCode,
-    description: "A next-generation AI-powered decentralized banking platform providing real-time portfolio tracking and seamless digital assets trading.",
+    description: "Provide University Courses and registration management system",
     imageGradient: "from-cyan-500/20 via-blue-500/20 to-purple-600/20",
     glowColor: "shadow-cyan-500/10 border-cyan-500/20",
-    tags: ["Next.js 14", "Tailwind CSS", "Web3 Integration", "AI Insights"],
+    tags: ["Next.js 14", "Tailwind CSS", "Mongodb", "cloudinary"],
     metrics: { client: "Aether Inc.", impact: "+140% trading volume" }
   },
   {

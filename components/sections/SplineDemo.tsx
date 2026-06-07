@@ -19,10 +19,10 @@ export default function SplineDemo() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <div className="w-full mx-auto min-h-12 bg-black/[0.96] pt-25 relative overflow-hidden">
-        <Spotlight className="" />
+      <div className="w-full mx-auto min-h-12 bg-black/[0.96]  pt-25 relative overflow-hidden">
+        <Spotlight />
 
-        <div className="flex h-full flex-col md:flex-row">
+        <div className="flex h-full flex-col md:flex-row ">
           {/* Left content */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -37,7 +37,7 @@ export default function SplineDemo() {
               </span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
               Powering Next-Gen 
               <span className="block bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                 Brands with AI-Driven
