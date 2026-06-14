@@ -39,9 +39,7 @@ export default function Process() {
               <div className="text-6xl font-bold text-white/30 mb-4">{item.step}</div>
               <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
               <p className="text-gray-400">{item.description}</p>
-              {index < process.length - 1 && (
-                <div className="hidden lg:block absolute top-8 left-full w-full h-px bg-gradient-to-r from-cyan-500/50 to-transparent"></div>
-              )}
+             
             </motion.div>
           ))}
         </div>
